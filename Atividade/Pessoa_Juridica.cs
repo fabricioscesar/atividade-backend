@@ -2,6 +2,7 @@ namespace Atividade
 {
     class Pessoa_Juridica : Clientes
     {
+        // classe para pessoa jurídica e seus metodos
         public string cnpj{get; set;}
         public string ie{get; set;}
         public override void Pagar_Imposto(float v)

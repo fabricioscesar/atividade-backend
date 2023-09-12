@@ -4,7 +4,8 @@ namespace Atividade
     class Program
     {
         static void Main(string[] args)
-        { 
+        {
+            // metodo principal, iniciando em pré cadastro
             float val_pag;
                 Console.WriteLine("Informar Nome");
                 string var_nome = Console.ReadLine();
@@ -12,7 +13,7 @@ namespace Atividade
                 string var_endereco = Console.ReadLine();
                 Console.WriteLine("Pessoa Física (f) ou Jurídica (j) ?");
                 string var_tipo = Console.ReadLine();
-                if(var_tipo == "f")
+                if(var_tipo == "f")//condicional para pessoa fisica
                 {
                     // --- Pessoa Física ----
                     Pessoa_Fisica pf = new Pessoa_Fisica();
@@ -25,7 +26,8 @@ namespace Atividade
                     Console.WriteLine("Informar Valor de Compra:");
                     val_pag = float.Parse(Console.ReadLine());
                     pf.Pagar_Imposto(val_pag);
-                    Console.WriteLine("-------- Pessoa Física ---------");
+                    //Interface Final(Pessoa Física)
+                    Console.WriteLine("--------- Pessoa Física ---------");
                     Console.WriteLine("Nome ..........: " + pf.nome);
                     Console.WriteLine("Endereço ......: " + pf.endereco);
                     Console.WriteLine("CPF ...........: " + pf.cpf);
@@ -34,7 +36,7 @@ namespace Atividade
                     Console.WriteLine("Imposto .......: " + pf.valor_imposto.ToString("C"));
                     Console.WriteLine("Total a Pagar : " + pf.total.ToString("C"));
                 }
-                if(var_tipo == "j")
+                if(var_tipo == "j")//condicional para pessoa juridica
                 {
                     // Pessoa Jurídica
                     Pessoa_Juridica pj = new Pessoa_Juridica();
@@ -47,7 +49,8 @@ namespace Atividade
                     Console.WriteLine("Informar Valor de Compra:");
                     val_pag = float.Parse(Console.ReadLine());
                     pj.Pagar_Imposto(val_pag);
-                    Console.WriteLine("-------- Pessoa Jurídica ---------");
+                    //Interface Final(Pessoa Jurídica)
+                    Console.WriteLine("--------- Pessoa Jurídica ---------");
                     Console.WriteLine("Nome ..........: " + pj.nome);
                     Console.WriteLine("Endereço ......: " + pj.endereco);
                     Console.WriteLine("CNPJ ..........: " + pj.cnpj);

@@ -2,6 +2,7 @@ namespace Atividade
 {
     class Clientes
     {
+        // classe para clientes em geral e seus metodos de pré cadastro
         public string nome {get; set;}
         public string endereco {get; set;}
         public float valor {get; protected set;}
