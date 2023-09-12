@@ -4,7 +4,7 @@ namespace Atividade
     class Program
     {
         static void Main(string[] args)
-        {
+        { 
             float val_pag;
                 Console.WriteLine("Informar Nome");
                 string var_nome = Console.ReadLine();
